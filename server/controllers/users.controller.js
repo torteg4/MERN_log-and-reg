@@ -51,6 +51,9 @@ module.exports = {
             id: user._id
         }, process.env.SECRET_KEY);
 
+        console.log(userToken)
+
+
         res
             .cookie("usertoken", userToken, {
                 httpOnly: true
